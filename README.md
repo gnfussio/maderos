@@ -1,1 +1,1 @@
-# archivos sass para sitio restaurante maderos
+# Archivos sass - restaurante maderos
