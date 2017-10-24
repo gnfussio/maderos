@@ -1,0 +1,1333 @@
+/*sass --watch maderos-style.scss:maderos-style.css --style compressed*/
+@import 'mixin.scss';
+
+/* ============ theme styling resets start ============ */
+
+#main-navigation {
+	display:none;
+}
+
+#main-content {
+	padding: 0 0 0 0 !important;
+}
+
+.container {
+	width: 100% !important;
+	padding-right: 0 !important;
+    padding-left: 0 !important;	
+}
+
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.block {
+	padding: 0 0 0 0 !important;
+}
+
+.col-md-12 {
+	padding-right: 0 !important;
+    padding-left: 0 !important;	
+}
+
+#main {
+    padding: 0 0 0 0 !important;
+}
+
+.page-node- #content-wrapper {
+	background: none !important;
+	border: none !important;
+	margin-bottom: 0 !important;
+	border-radius: 0 !important;
+}
+
+.node > .content {
+	padding: 2% !important;
+	margin: 10px 0 0 0% !important; /* variar según diseño */
+	background-color: #fff;
+	@include respond-to('small') {
+		margin: 10px 0% 0 0% !important;
+	}
+	@include respond-to('medium') {
+		margin: 10px 10% 0 10% !important;
+	}
+	@include respond-to('large') {
+		margin: 10px 10% 0 10% !important;
+	}
+	@include respond-to('fourk') {
+		margin: 10px 10% 0 10% !important;
+	}
+}
+
+.col-md-12 {
+	min-height: 0 !important;
+}
+
+/* ============ theme styling resets ends ============ */
+
+body {
+
+}
+
+#block-search-form {
+	display: none;
+}
+
+.page-title {
+	display: none;
+}
+
+.page-node-1 {
+	#breadcrumb {
+		display: none;
+	}
+}
+
+#header {
+	/*height:99vh;*/
+	display:none;
+}
+
+/* ========= header starts ========= */
+
+.page-node-1 {
+	#block-block-6 {
+		background:  url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/slide-inicio.jpg) no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+	}
+}
+
+.page-node-111 {
+	#block-block-6 {
+		background:  url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/slide-eventos.jpg) no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+	}
+}
+
+.page-node-106 {
+	#block-block-6 {
+		background:  url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/slide-quienesomos.jpg) no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+	}
+}
+
+#block-block-6 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:100vh;
+	background:  url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/slide-inicio.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/*logo*/
+#block-block-4 {
+	position: absolute;
+	top: 20px;
+	left: 10%;
+	@include respond-to('small') {
+		left: 5%;
+	}
+	@include respond-to('medium') {
+		left: 30%;
+	}
+	@include respond-to('large') {
+		left: 10%;
+	}
+	@include respond-to('fourk') {
+		left: 20%;
+	}
+}
+
+/*social*/
+#block-block-2 {
+	position: absolute;
+	display:none;
+	@include respond-to('small') {
+		display:none;
+	}
+	@include respond-to('medium') {
+		top: 20px;
+		right: 1%;
+		display:initial;
+	}
+	@include respond-to('large') {
+		top: 90px;
+		right: 10%;
+		display:initial;
+	}
+	@include respond-to('fourk') {
+		top: 90px;
+		right: 20%;
+		display:initial;
+	}
+}
+
+
+/*slogan*/
+#block-block-3 {
+	position: absolute;
+		top: 190px;
+		left: 5%;
+	@include respond-to('small') {
+		top: 190px;
+		left: 5%;
+	}
+	@include respond-to('medium') {
+		top: 370px;
+		left: 27%;
+	}
+	@include respond-to('large') {
+		top: 340px;
+		left: 10%;
+	}
+	@include respond-to('fourk') {
+		top: 340px;
+		left: 20%;
+	}
+	#slogan {
+		padding:0 15px 0 15px;
+		h1 {
+			font-family: 'Oswald', sans-serif;
+			font-weight: lighter;
+			font-size: 4em !important;
+			margin:0;
+			padding:0;
+			color:#fff;
+			@include respond-to('small') {
+				font-size: 2em;
+			}
+			span {
+				font-weight:bolder;
+			}
+		}
+		#goDown-icon {
+
+		}
+	}
+}
+
+#block-block-13 {
+	position: absolute;
+		top: 190px;
+		left: 5%;
+	@include respond-to('small') {
+		top: 190px;
+		left: 5%;
+	}
+	@include respond-to('medium') {
+		top: 370px;
+		left: 27%;
+	}
+	@include respond-to('large') {
+		top: 340px;
+		left: 10%;
+	}
+	@include respond-to('fourk') {
+		top: 340px;
+		left: 20%;
+	}
+	#slogan {
+		padding:0 15px 0 15px;
+		h1 {
+			font-family: 'Oswald', sans-serif;
+			font-weight: lighter;
+			font-size: 4em !important;
+			margin:0;
+			padding:0;
+			color:#fff;
+			@include respond-to('small') {
+				font-size: 2em;
+			}
+			span {
+				font-weight:bolder;
+			}
+		}
+		#goDown-icon {
+
+		}
+	}
+}
+
+#block-block-14 {
+	position: absolute;
+		top: 190px;
+		left: 5%;
+	@include respond-to('small') {
+		top: 190px;
+		left: 5%;
+	}
+	@include respond-to('medium') {
+		top: 370px;
+		left: 27%;
+	}
+	@include respond-to('large') {
+		top: 340px;
+		left: 10%;
+	}
+	@include respond-to('fourk') {
+		top: 340px;
+		left: 20%;
+	}
+	#slogan {
+		padding:0 15px 0 15px;
+		h1 {
+			font-family: 'Oswald', sans-serif;
+			font-weight: lighter;
+			font-size: 4em !important;
+			margin:0;
+			padding:0;
+			color:#fff;
+			@include respond-to('small') {
+				font-size: 2em;
+			}
+			span {
+				font-weight:bolder;
+			}
+		}
+		#goDown-icon {
+
+		}
+	}
+}
+
+
+/* ========= header ends ========= */
+
+/* ========= footer starts ========= */
+
+#subfooter {
+	display:none;
+}
+
+#footer {
+	#maderos-social-footer {
+		.waze {
+			float:left;
+			margin: 0 10px 0 0;
+		}
+		.facebook {
+			float:left;
+			margin: 0 10px 0 0;
+		}	
+	}
+}
+
+/* ========= footer ends ========= */
+
+/* ========= Menu Principal - side menu starts ========= */
+
+#slider {
+	position:relative;
+	height:99vh;
+}
+
+#maderos-social {
+	position:absolute;
+	top:0;
+	left:-75px;
+	display: flex;
+	flex-direction: column;
+	@include respond-to('small') {
+		left:-75px;
+		flex-direction: column;
+	}
+	@include respond-to('medium') {
+		left:-75px;
+		flex-direction: column;
+	}
+	@include respond-to('large') {
+		left:-195px;
+		flex-direction: row;
+	}
+	@include respond-to('fourk') {
+		left:-195px;
+		flex-direction: row;
+	}
+	.waze {
+		margin: 0 10px 0 0;
+		border:none;
+		padding: 10px 0 0 0;
+		display:none;
+		@include respond-to('small') {
+			display:none;
+		}
+		@include respond-to('medium') {
+			display:none;
+		}
+		@include respond-to('large') {
+			display:block;
+			padding: 20px 0 0 0;
+		}
+		@include respond-to('fourk') {
+			display:block;
+			padding: 20px 0 0 0;
+		}
+		img {
+			border-bottom: 1px solid #a41c28;
+			border-right: 1px solid #a41c28;
+			background-color: #a41c28;
+		}
+	}
+	.facebook {
+		margin: 0 10px 0 0;
+		border:none;
+		padding: 10px 0 0 0;
+		display:none;
+		@include respond-to('small') {
+			display:none;
+			padding: 10px 0 0 0;
+		}
+		@include respond-to('medium') {
+			display:none;
+			padding: 10px 0 0 0;
+		}
+		@include respond-to('large') {
+			display:block;
+			padding: 20px 0 0 0;
+		}
+		@include respond-to('fourk') {
+			display:block;
+			padding: 20px 0 0 0;
+		}
+		img {
+			border-bottom: 1px solid #a41c28;
+			border-right: 1px solid #a41c28;
+			background-color: #a41c28;
+		}
+	}
+	.maderos_menu_toggle {
+		border:block;
+		padding: 20px 0 0 0;
+		@include respond-to('small') {
+			display:block;
+			padding: 10px 0 0 0;
+		}
+		@include respond-to('medium') {
+			display:block;
+			padding: 10px 0 0 0;
+		}
+		@include respond-to('large') {
+			display:block;
+			padding: 20px 0 0 0;
+		}
+		@include respond-to('fourk') {
+			display:block;
+			padding: 20px 0 0 0;
+		}
+		img {
+			border-bottom: 1px solid #a41c28;
+			border-right: 1px solid #a41c28;
+			background-color: #a41c28;
+		}
+	}
+	.maderos_menu_close {
+		border:none;
+		padding: 15px 0 0 0;
+		margin-left: 75px;
+		@include respond-to('small') {
+			display:none;
+			padding: 15px 0 0 0;
+			margin-left: 75px;
+		}
+		@include respond-to('medium') {
+			display:none;
+			padding: 10px 0 0 0;
+			margin-left: 0;
+		}
+		@include respond-to('large') {
+			display:block;
+			padding: 20px 0 0 0;
+			margin-left: 0;
+		}
+		@include respond-to('fourk') {
+			display:block;
+			padding: 20px 0 0 0;
+			margin-left: 0;
+		}
+		img {
+			border-bottom: 1px solid #a41c28;
+			border-right: 1px solid #a41c28;
+			background-color: #a41c28;
+		}
+	}
+}
+
+.sidenav {
+    height: 100vh;
+    width: 335px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -335px;
+    background-color: #a41c28;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1000;
+    .maderos_menu_close, 
+    .maderos_menu_toggle{
+		cursor: pointer;
+    }
+}
+
+.sidenav a {
+    padding: 18px 8px 18px 32px;
+    font-weight:lighter;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: left;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid #fff;
+}
+
+.sidenav a:nth-of-type(1) {
+	border-top: 1px solid #fff;
+}
+
+/*.sidenav a:nth-of-type(2) {
+	border-top: 1px solid #fff;
+}*/
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/*.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}*/
+
+.sidenav ul li {
+	list-style-type: none !important; 
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* ========= side menu ends ========= */
+
+/* ========= Eventos - sub nav starts ========= */
+
+#subnav {
+	background-color: #f4f3f1;
+	ul {
+		list-style-type:none;
+		overflow: hidden;
+		padding:35px 0;
+		max-width:990px;
+		margin:0 auto;
+		text-align:center;
+		li {
+			float:left;
+			list-style:none;
+			display: inline;
+			margin:0 30px;
+			padding:10px 20px !important;
+			font-size: 24px;
+			font-weight: lighter;
+			color: #333;
+			text-transform: uppercase;
+			text-decoration:none;
+			display:block;
+			border-bottom: 5px solid #f4f3f1;
+			&:hover {
+				border-bottom: 5px solid #ef901c;
+			}
+		}
+	}
+}
+
+/* ========= Eventos sub nav ends ========= */
+
+/* ========= descripcion de eventos starts ========= */
+
+#descripcion-gastro {
+	width: 100%;
+	background: url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/descripcion-gastro-small.jpg) no-repeat top left;
+	background-size:cover;
+	height:673px;
+	position:relative;
+	@include respond-to('small') {
+	background: url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/descripcion-gastro-small.jpg) no-repeat top left;
+	background-size:cover;
+	}
+	@include respond-to('medium') {
+	background: url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/descripcion-gastro.jpg) no-repeat top left;	
+	}
+	@include respond-to('large') {
+	background: url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/descripcion-gastro.jpg) no-repeat top left;	
+	}
+	.txt_descripcion {
+		background: rgba(255,255,255,0.7);
+		position:absolute;
+		right: 0;
+		top: 0px;
+		width:100%;
+		padding:20px;
+		height:673px;
+		background-clip: content-box;
+		@include respond-to('small') {
+			right: 0;
+			top: 0;
+			width:100%;
+			padding:20px;
+			height:673px;
+			background-clip: content-box;	
+		}
+		@include respond-to('medium') {
+			right: 0;
+			top: 215px;
+			width:90%;
+			padding:30px;
+			height:auto;
+		}
+		@include respond-to('large') {
+			right: 0;
+			top: 185px;
+			width:50%;
+			padding:40px;
+			height:auto;
+		}
+		h3 {
+			color: #a41c28;
+			padding: 10px 10px;
+			@include respond-to('small') {
+				padding: 10px 10px;
+			}
+		}
+		p {
+			color: #5a4621;
+			padding: 0 10px;
+			@include respond-to('small') {
+				padding: 0 10px;
+			}
+		}	
+	}
+}
+
+.descripcion-eventos {
+	max-width: 880px;
+	margin: 0 auto 40px auto;
+	p {
+		text-align: center;
+		color: #5a4621;
+	}
+}
+
+/* ========= descripcion de eventos ends ========= */
+
+/* ========= mision vision starts ========= */
+
+#mision {
+	width:300px;
+	height:293px;
+	background:url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/mision.jpg) no-repeat center center;
+	background-size:cover;
+	padding:20px;
+	margin:40px auto;
+	float:none;
+	@include respond-to('small') {
+		width:300px;
+		height:293px;
+		float:none;
+		margin:40px auto;
+	}
+	@include respond-to('medium') {
+		width:300px;
+		height:293px;
+		float:none;
+		margin:40px auto;
+	}
+	@include respond-to('large') {
+		width:300px;
+		height: 293px;
+		margin: 40px 40px;
+		float:left;
+	}
+	.descripcion-mv {
+		width:100%;
+		height:100%;
+		text-align:center;
+		border: solid 1px #fff;
+		padding: 20px;
+		background-clip: content-box;
+		background-color:rgba(255,255,255,0.7);
+		h4 {
+			font-size:26px;
+			font-weight:lighter;
+			text-transform: uppercase;
+			color:#3b1b06;
+			margin:0;
+			padding:20px 0 20px 0;
+			@include respond-to('small') {
+				font-size:26px;
+				padding:20px 0 20px 0;
+			}
+			@include respond-to('medium') {
+				font-size:26px;
+				padding:20px 0 20px 0;
+			}
+			@include respond-to('large') {
+				font-size:26px;
+				padding:20px 0 20px 0;
+			}
+		}
+		p {
+			font-size:16px;
+			padding: 20px;
+			line-height: 18px;
+			font-weight:lighter;
+			@include respond-to('small') {
+				font-size:16px;
+				padding: 20px;
+				line-height: 18px;	
+			}
+			@include respond-to('medium') {
+				font-size:16px;
+				padding: 20px;
+				line-height: 18px;					
+			}
+			@include respond-to('large') {
+				font-size:16px;
+				padding: 20px;
+				line-height: 18px;
+			}
+		}
+	}
+}
+
+#vision {
+	width:300px;
+	height:293px;
+	float:none;
+	background:url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/vision.jpg) no-repeat center center;
+	background-size:cover;
+	padding:20px;
+	margin:20px auto;
+	@include respond-to('small') {
+		width:300px;
+		height:293px;
+		float:none;
+		margin:20px auto;
+	}
+	@include respond-to('medium') {
+		width:300px;
+		height:293px;
+		float:none;
+		margin:40px auto;
+	}
+	@include respond-to('large') {
+		width:300px;
+		height: 293px;
+		margin: 40px 40px;
+		float:left;
+	}
+	.descripcion-mv {
+		width:100%;
+		height:100%;
+		text-align:center;
+		border: solid 1px #fff;
+		padding: 20px;
+		background-clip: content-box;
+		background-color:rgba(255,120,0,0.7);
+		h4 {
+			font-size:26px;
+			font-weight:lighter;
+			text-transform: uppercase;
+			color:#fff;
+			margin:0;
+			padding:20px 0 20px 0;
+			@include respond-to('small') {
+				font-size:26px;
+				padding:20px 0 20px 0;
+			}
+			@include respond-to('medium') {
+				font-size:26px;
+				padding:20px 0 20px 0;
+			}
+			@include respond-to('large') {
+				font-size:26px;
+				padding:20px 0 20px 0;
+			}
+		}
+		p {
+			font-size:16px;
+			font-weight:lighter;
+			color:#fff;
+			padding: 20px;
+			line-height: 18px;
+			@include respond-to('small') {
+				font-size:16px;
+				padding: 20px;
+				line-height: 18px;	
+			}
+			@include respond-to('medium') {
+				font-size:16px;
+				padding: 20px;
+				line-height: 18px;					
+			}
+			@include respond-to('large') {
+				font-size:16px;
+				padding: 20px;
+				line-height: 18px;
+			}
+		}
+	}
+}
+
+/* ========= mision vision ends ========= */
+
+
+/* ========= webforms starts ========= */
+
+.webform-client-form {
+	max-width: 585px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+
+.form-actions {
+	.form-submit {
+		width: 100%;
+	}
+}
+
+label {
+	display: none;
+}
+
+select#edit-submitted-dia-month {
+    width: 40%;
+}
+
+select#edit-submitted-dia-day {
+    width: 40%;
+    margin-left: 8px;
+}
+
+select#edit-submitted-hora-hour {
+    width: 40%;
+}
+
+select#edit-submitted-hora-minute {
+    width: 40%;
+}
+
+.webform-container-inline label {
+    margin-right: 0.2em;
+}
+
+/* ========= webforms ends ========= */
+
+/* ========= menu starts ========= */
+
+.page-menu {
+	#slider {
+		position:relative;
+		height:200px;
+		background-color: #a51c26;
+	}
+	#main-content {
+		background: url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/postres.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	#block-block-9 {
+		background-color: rgba(255,255,255,0.7);
+		max-width: 990px;
+		margin: 0 auto;
+	}
+	#block-system-main {
+		background-color: rgba(255,255,255,0.7);
+		max-width: 990px;
+		margin: 0 auto;
+		padding: 0 30px 60px 30px !important;
+	}
+}
+
+
+#block-block-9 {
+	h2 {
+		display: none;
+	}
+	#platillos-titular {
+		font-weight: lighter;
+		text-transform: uppercase;
+		font-size: 36px;
+		text-align: center;
+		margin: 30px 0 0 0;
+		padding: 0 0 0 0;
+	}
+	#platillos-nav {
+		ul {
+			list-style-type: none;
+			overflow: hidden;
+			margin: 0 auto 0 auto;
+			padding: 45px 0 45px 0;
+			text-align: center;
+			max-width:990px;
+			li {
+				/*float: left;*/
+				list-style: none;
+				display: inline;
+				margin: 0 10px 0 10px;
+				padding: 0 0 0 0;
+				font-size: 14px;
+				font-weight: lighter;
+				color: #333;
+				text-transform:uppercase;
+				border-bottom: 5px solid transparent;
+				&:hover {
+						border-bottom: 5px solid #a41c26;
+					}
+			}
+
+		}
+	}
+}
+
+.view-menu {
+	max-width: 990px;
+	margin: 0 auto;
+	.view-content {
+
+		.views-field-title {
+			font-weight: bold;
+			font-size: 18px;
+			a {
+				color:#333;
+			}
+
+		}
+
+		.views-field-field-precio {
+			margin: 0 0 5px 0;
+		}
+
+		.views-field-field-categoria {
+			display: none;
+		}
+
+		.views-field-field-descripcion {
+			margin: 0 0 30px 0;
+		}
+
+	}
+
+}
+
+/* ========= menu ends ========= */
+
+/* ========= contacto starts ========= */
+
+.page-node-108 {
+	#slider {
+		position:relative;
+		height:200px;
+		background-color: #a51c26;
+	}
+	#block-system-main {
+		display: none;
+	}
+	h2 {
+		font-weight: lighter;
+		text-transform: uppercase;
+		font-size: 36px;
+		text-align: center;
+		margin: 30px 0 0 0;
+		padding: 0 0 0 0;
+	}
+	#block-webform-client-block-109 {
+    	margin: 0 0 30px 0;
+	}
+}
+
+/* ========= contacto ends ========= */
+
+
+/* ========= eventos cotizacion starts ========= */
+
+.page-node-111 {
+	h2 {
+		font-weight: lighter;
+		text-transform: uppercase;
+		font-size: 36px;
+		text-align: center;
+		margin: 30px 0 30px 0;
+		padding: 0 0 0 0;
+	}
+	.gal {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+		max-width: 990px;
+		margin: 0 auto;
+	}	
+
+	.gal img{
+		width: 100%;
+		padding: 7px 0;
+	}
+
+	@media (max-width: 400px) {
+		.gal {
+			-webkit-column-count: 1;
+			-moz-column-count: 1;
+			column-count: 1;
+		}
+	}
+}
+
+
+/* ========= eventos cotizacion ends ========= */
+
+
+/* ========= home starts ========= */
+
+/* home deco - imagen decorativa */
+
+#block-block-11 {
+	h2 { display: none; }
+	#home_deco {
+		width: 100%;
+		height: 50vh;
+		background:  url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/home-deco.jpg) no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+	}
+}
+
+/* menu del día */
+
+#block-views-menu-del-dia-block {
+	h2 {
+		font-weight: lighter;
+		text-transform: uppercase;
+		font-size: 36px;
+		text-align: center;
+		margin: 30px 0 10px 0;
+		padding: 0 0 0 0;
+	}
+	.view-menu-del-dia {
+		.view-content {
+			.views-row {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				@include respond-to('small') {
+					flex-direction: column;
+				}
+				@include respond-to('medium') {
+					flex-direction: row;
+				}
+				@include respond-to('large') {
+					flex-direction: row;
+				}
+				@include respond-to('fourk') {
+					flex-direction: row;
+				}
+				.views-field-title {
+					display: none;
+				}
+				.views-fieldset {
+					width: 300px;
+					position: relative;
+					margin:0 auto;
+				}
+			}
+		}
+	}
+}
+
+/* platillos del día */
+
+.views_entradas {
+		.views-field-field-entrada-del-dia-nombre {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			.field-content{
+				display: flex;
+				height: 85%;
+				background-color:rgba(255,120,0,0.3);
+				justify-content:center;
+				align-items: center;
+				margin:20px;
+				color: #fff;
+				background-clip: content-box;
+				border: 1px solid #fff;
+				padding: 10px;
+				font-size: 1.3em;
+			}
+		}
+		.views-field-field-entrada-del-dia {
+
+		}
+	
+}
+
+.views_platofuerte {
+		.views-field-field-plato-fuerte-dl-dia-nombre {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			.field-content{
+				display: flex;
+				height: 85%;
+				background-color:rgba(255,120,0,0.3);
+				justify-content:center;
+				align-items: center;
+				margin:20px;
+				color: #fff;
+				background-clip: content-box;
+				border: 1px solid #fff;
+				padding: 10px;
+				font-size: 1.3em;
+			}
+		}
+		.views-field-field-plato-fuerte-del-dia {
+
+		}
+	
+}
+
+.views_postre {
+		.views-field-field-postre-del-dia-nombre {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			.field-content{
+				display: flex;
+				height: 85%;
+				background-color:rgba(255,120,0,0.3);
+				/*background-blend-mode: lighten;*/
+				justify-content:center;
+				align-items: center;
+				margin:20px;
+				color: #fff;
+				background-clip: content-box;
+				border: 1px solid #fff;
+				padding: 10px;
+				font-size: 1.3em;
+			}
+		}
+		.views-field-field-postre-del-dia {
+
+		}
+	
+}
+
+/* slide show promos */
+
+#block-views-promos-por-temporada-block {
+	margin: 80px 0 40px 0;
+	h2 { display: none; }
+
+	.view-promos-por-temporada {
+		
+
+		#views_slideshow_cycle_main_promos_por_temporada-block_1 {
+			width: 100% !important;
+			float: left;
+			/*border: 1px solid green;*/
+			#views_slideshow_cycle_teaser_section_promos_por_temporada-block_1 {
+				/*min-height: 430px;*/
+				width: 100% !important;
+				height: auto;
+				background-color: #f2ebe3;
+				.views_slideshow_cycle_div_promos_por_temporada-block_1_0 {
+					width: 100%;
+					height: auto;
+					
+				}
+				.views_slideshow_cycle_div_promos_por_temporada-block_1_1 {
+					width: 100%;
+				}
+				.views_slideshow_cycle_div_promos_por_temporada-block_1_2 {
+					width: 100%;
+				}
+
+				.views-slideshow-cycle-main-frame-row {
+					/*min-height: 395px;*/
+					width: 100% !important;
+					/*height: auto;*/
+					.views-slideshow-cycle-main-frame-row-item {
+						display: block;
+						justify-content: space-evenly;
+						@include respond-to('small') {
+							display: block;
+						}
+						@include respond-to('medium') {
+							display: flex;
+						}
+						@include respond-to('large') {
+							display: flex;
+						}
+						@include respond-to('fourk') {
+							display: flex;
+						}
+						/*.field-content {
+							max-width: 100%;
+							width: 100%;
+						}*/
+						.views-field-field-promo-foto {
+
+							/*max-width: 45vw;*/
+							/*max-height: 50vh;*/
+							/*width: 785px;*/
+							img {
+								margin: 0;
+								padding: 0;	
+							}
+						}
+						.views_promo_texto {
+							text-transform: uppercase;
+							width: 70%; /*calc(100% - 100px);*/
+							padding: 4% 2%;
+							@include respond-to('small') {
+								padding: 4% 2%;
+							}
+							@include respond-to('medium') {
+								padding: 4% 2%;
+							}
+							@include respond-to('large') {
+								padding: 1% 2%;
+							}
+							@include respond-to('fourk') {
+								padding: 4% 2%;
+							}
+							.views-field-field-promo-titular {
+								color: #a51c26;
+								font-size: 3em;
+								font-weight: bold;
+								line-height: 1em;
+								padding: 30px 0 0 20px;
+								@include respond-to('small') {
+									font-size: 2em;
+								}
+								@include respond-to('medium') {
+									font-size: 2em;
+								}
+								@include respond-to('large') {
+									font-size: 3em;
+								}
+								@include respond-to('fourk') {
+									font-size: 3em;
+								}
+							}
+							.views-field-field-promo-descripcion {
+								color: #a51c26;
+								font-size: 4em;
+								font-weight: bolder;
+								line-height: 1em;
+								padding: 20px 0 0 20px;
+									@include respond-to('small') {
+										font-size: 4em;
+									}
+									@include respond-to('medium') {
+										font-size: 2.5em;
+									}
+									@include respond-to('large') {
+										font-size: 4em;
+									}
+									@include respond-to('fourk') {
+										font-size: 4em;
+									}
+							}
+							.views-field-field-promo-dias {
+								color: #fb6202;
+								font-size: 1.2em;
+								line-height: 1em;
+								padding: 50px 0 30px 20px;
+								@include respond-to('small') {
+									padding: 50px 0 30px 20px;
+								}
+								@include respond-to('medium') {
+									padding: 50px 0 40px 20px;
+								}
+								@include respond-to('large') {
+									padding: 120px 0 0 20px;
+								}
+								@include respond-to('fourk') {
+									padding: 120px 0 0 20px;
+								}
+							}
+						}
+					}
+
+				}
+
+			}
+		}
+	}
+
+}
+
+
+/* webfomr reservaciones en home */
+
+.page-node-1 {
+	#block-webform-client-block-109 {
+		h2 {
+			font-weight: lighter;
+			text-transform: uppercase;
+			font-size: 36px;
+			text-align: center;
+			margin: 30px 0 0 0;
+			padding: 0 0 0 0;
+		}
+	}
+}
+
+
+/* ========= home ends ========= */
+
+#block-block-1 {
+	/*display:none;*/
+	h2 {
+		display:none;
+	}
+}
+
+#block-block-4, #block-block-2, #block-block-3, #block-block-6, #block-block-8, #block-block-7, #block-block-13, #block-block-14 {
+	h2 {
+		display: none;
+	}
+}
+
