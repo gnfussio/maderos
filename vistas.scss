@@ -1,0 +1,302 @@
+@import 'compass/css3';
+@import 'mixin.scss';
+
+.view-menu {
+	max-width: 990px;
+	margin: 0 auto;
+	.view-content {
+		.itemComidas{
+			margin-bottom: 25px;
+		}
+
+		.views-field-title {
+			font-weight: bold;
+			font-size: 18px;
+			a {
+				color:#333;
+			}
+		}
+
+		.views-field-field-precio {
+			margin: 0 0 5px 0;
+		}
+
+		.views-field-field-categoria {
+			display: none;
+		}
+
+		.views-field-field-descripcion {
+			
+		}
+	}
+}
+
+/* ========= menu ends ========= */
+
+
+
+/* menu del día */
+
+#block-views-menu-del-dia-block {
+	h2 {
+		font-weight: lighter;
+		text-transform: uppercase;
+		font-size: 36px;
+		text-align: center;
+		margin: 30px 0 10px 0;
+		padding: 0 0 0 0;
+	}
+	.view-menu-del-dia {
+		.view-content {
+			.views-row {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				@include respond-to('small') {
+					flex-direction: column;
+				}
+				@include respond-to('medium') {
+					flex-direction: row;
+				}
+				@include respond-to('large') {
+					flex-direction: row;
+				}
+				@include respond-to('fourk') {
+					flex-direction: row;
+				}
+				.views-field-title {
+					display: none;
+				}
+				.views-fieldset {
+					width: 300px;
+					position: relative;
+					margin:0 auto;
+				}
+			}
+		}
+	}
+}
+
+
+/* platillos del día */
+
+.views_entradas {
+		.views-field-field-entrada-del-dia-nombre {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			.field-content{
+				display: flex;
+				height: 85%;
+				background-color:rgba(255,120,0,0.3);
+				justify-content:center;
+				align-items: center;
+				margin:20px;
+				color: #fff;
+				background-clip: content-box;
+				border: 1px solid #fff;
+				padding: 10px;
+				font-size: 1.3em;
+			}
+		}
+		.views-field-field-entrada-del-dia {
+
+		}
+	
+}
+
+.views_platofuerte {
+		.views-field-field-plato-fuerte-dl-dia-nombre {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			.field-content{
+				display: flex;
+				height: 85%;
+				background-color:rgba(255,120,0,0.3);
+				justify-content:center;
+				align-items: center;
+				margin:20px;
+				color: #fff;
+				background-clip: content-box;
+				border: 1px solid #fff;
+				padding: 10px;
+				font-size: 1.3em;
+			}
+		}
+		.views-field-field-plato-fuerte-del-dia {
+
+		}
+	
+}
+
+.views_postre {
+		.views-field-field-postre-del-dia-nombre {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			.field-content{
+				display: flex;
+				height: 85%;
+				background-color:rgba(255,120,0,0.3);
+				/*background-blend-mode: lighten;*/
+				justify-content:center;
+				align-items: center;
+				margin:20px;
+				color: #fff;
+				background-clip: content-box;
+				border: 1px solid #fff;
+				padding: 10px;
+				font-size: 1.3em;
+			}
+		}
+		.views-field-field-postre-del-dia {
+
+		}
+	
+}
+
+
+/* slide show promos */
+/*
+#block-views-promos-por-temporada-block {
+	margin: 80px 0 40px 0;
+	h2 { display: none; }
+
+	.view-promos-por-temporada {
+		
+
+		#views_slideshow_cycle_main_promos_por_temporada-block_1 {
+			width: 100% !important;
+			float: left;
+		
+			#views_slideshow_cycle_teaser_section_promos_por_temporada-block_1 {
+			
+				width: 100% !important;
+				height: auto;
+				background-color: #f2ebe3;
+				.views_slideshow_cycle_div_promos_por_temporada-block_1_0 {
+					width: 100%;
+					height: auto;
+					
+				}
+				.views_slideshow_cycle_div_promos_por_temporada-block_1_1 {
+					width: 100%;
+				}
+				.views_slideshow_cycle_div_promos_por_temporada-block_1_2 {
+					width: 100%;
+				}
+
+				.views-slideshow-cycle-main-frame-row {
+				
+					width: 100% !important;
+				
+					.views-slideshow-cycle-main-frame-row-item {
+						display: block;
+						justify-content: space-evenly;
+						@include respond-to('small') {
+							display: block;
+						}
+						@include respond-to('medium') {
+							display: flex;
+						}
+						@include respond-to('large') {
+							display: flex;
+						}
+						@include respond-to('fourk') {
+							display: flex;
+						}
+
+						.views-field-field-promo-foto {
+
+
+							img {
+								margin: 0;
+								padding: 0;	
+							}
+						}
+						.views_promo_texto {
+							text-transform: uppercase;
+							width: 70%;
+							padding: 4% 2%;
+							@include respond-to('small') {
+								padding: 4% 2%;
+							}
+							@include respond-to('medium') {
+								padding: 4% 2%;
+							}
+							@include respond-to('large') {
+								padding: 1% 2%;
+							}
+							@include respond-to('fourk') {
+								padding: 4% 2%;
+							}
+							.views-field-field-promo-titular {
+								color: #a51c26;
+								font-size: 3em;
+								font-weight: bold;
+								line-height: 1em;
+								padding: 30px 0 0 20px;
+								@include respond-to('small') {
+									font-size: 2em;
+								}
+								@include respond-to('medium') {
+									font-size: 2em;
+								}
+								@include respond-to('large') {
+									font-size: 3em;
+								}
+								@include respond-to('fourk') {
+									font-size: 3em;
+								}
+							}
+							.views-field-field-promo-descripcion {
+								color: #a51c26;
+								font-size: 4em;
+								font-weight: bolder;
+								line-height: 1em;
+								padding: 20px 0 0 20px;
+									@include respond-to('small') {
+										font-size: 4em;
+									}
+									@include respond-to('medium') {
+										font-size: 2.5em;
+									}
+									@include respond-to('large') {
+										font-size: 4em;
+									}
+									@include respond-to('fourk') {
+										font-size: 4em;
+									}
+							}
+							.views-field-field-promo-dias {
+								color: #fb6202;
+								font-size: 1.2em;
+								line-height: 1em;
+								padding: 50px 0 30px 20px;
+								@include respond-to('small') {
+									padding: 50px 0 30px 20px;
+								}
+								@include respond-to('medium') {
+									padding: 50px 0 40px 20px;
+								}
+								@include respond-to('large') {
+									padding: 120px 0 0 20px;
+								}
+								@include respond-to('fourk') {
+									padding: 120px 0 0 20px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+*/
+

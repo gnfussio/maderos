@@ -1,3 +1,14 @@
+
+@import 'compass/css3';
+
+// colores
+
+$blanco : #FFF;
+$negro : #000;
+$gris : #666;
+$grisOscuro: #333;
+$rojo: #a51c26;
+
 $breakpoints: (
 	'small':  ( min-width:  47em ),
 	'medium': ( min-width:  62em ),
@@ -24,12 +35,44 @@ $breakpoints: (
 	}
 }
 
+@mixin transicion($val){
+	-webkit-transition: $val;
+	-moz-transition: $val;
+	-o-transition: $val;
+	transition: $val;
+}
+
+@mixin background($val){
+	 -webkit-background-size: $val;
+	 -moz-background-size: $val;
+	 -o-background-size: $val;
+	 background-size: $val;
+}
+
+
+// requiere compass/css3
+@mixin flexo{
+	@include display-flex(flex);
+	@include align-items(flex-end);
+	@include justify-content(center);
+}
+
+@mixin flexo2{
+	@include display-flex(flex);
+	@include align-items(start);
+	@include justify-content(center);
+}
+
 @mixin flexo3{
 	@include display-flex(flex);
 	@include align-items(center);
 	@include justify-content(center);
 }
 
+@mixin wyh {
+	width: 100%;
+	height: auto;
+}
 
 /*
   'phone': 320px,

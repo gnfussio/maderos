@@ -1,0 +1,50 @@
+@import 'compass/css3';
+@import 'mixin.scss';
+
+@media only screen and (min-width: 1440px) {
+	
+}
+@media only screen and (max-width: 1440px) { // Laptop L
+	
+}
+@media only screen and (max-width: 1024px) { // Laptop
+	
+}
+@media only screen and (max-width: 992px) {
+	
+}
+@media only screen and (max-width: 768px) {
+	
+	.view-menu {
+		.view-content {
+			.itemComidas{
+				
+			}
+		}
+	}
+
+	#platillos-nav{
+		ul{
+			li{
+			    margin: 5px 0!important;
+			    display: inline-block!important;
+			    @include border-radius(6px);
+			    background: lighten($rojo, 30%);
+			    border-bottom: none!important;
+			    color: $blanco!important;
+			    &:hover{
+			    	border-bottom: none!important;
+			    	background: lighten($rojo, 0%);
+			    }
+			}
+		}
+	}	
+}
+
+
+@media only screen and (max-width: 480px){
+
+}
+@media only screen and (max-width: 320px){
+
+}

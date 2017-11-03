@@ -1,5 +1,8 @@
 /*sass --watch maderos-style.scss:maderos-style.css --style compressed*/
+@import 'compass/css3';
 @import 'mixin.scss';
+@import 'responsive.scss';
+@import 'vistas.scss';
 
 /* ============ theme styling resets start ============ */
 
@@ -32,7 +35,7 @@
 }
 
 #main {
-    padding: 0 0 0 0 !important;
+    padding: 0!important;
 }
 
 .page-node- #content-wrapper {
@@ -93,31 +96,22 @@ body {
 
 .page-node-1 {
 	#block-block-6 {
-		background:  url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/slide-inicio.jpg) no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
+		background:  url(/maderos17/sites/all/themes/bootstrap_business/images/slide-inicio.jpg) no-repeat center center fixed;
+			@include background(cover);
 	}
 }
 
 .page-node-111 {
 	#block-block-6 {
-		background:  url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/slide-eventos.jpg) no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
+		background:  url(/maderos17/sites/all/themes/bootstrap_business/images/slide-eventos.jpg) no-repeat center center fixed;
+			@include background(cover);
 	}
 }
 
 .page-node-106 {
 	#block-block-6 {
-		background:  url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/slide-quienesomos.jpg) no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
+		background:  url(/maderos17/sites/all/themes/bootstrap_business/images/slide-quienesomos.jpg) no-repeat center center fixed;
+			@include background(cover);
 	}
 }
 
@@ -127,7 +121,7 @@ body {
 	left: 0;
 	width:100%;
 	height:100vh;
-	background:  url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/slide-inicio.jpg) no-repeat center center fixed;
+	background:  url(/maderos17/sites/all/themes/bootstrap_business/images/slide-inicio.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -545,10 +539,12 @@ body {
 		max-width:990px;
 		margin:0 auto;
 		text-align:center;
+		@include transition(300ms);
 		li {
 			float:left;
 			list-style:none;
 			display: inline;
+			cursor: pointer;
 			margin:0 30px;
 			padding:10px 20px !important;
 			font-size: 24px;
@@ -559,7 +555,7 @@ body {
 			display:block;
 			border-bottom: 5px solid #f4f3f1;
 			&:hover {
-				border-bottom: 5px solid #ef901c;
+				border-bottom: 5px solid $rojo;
 			}
 		}
 	}
@@ -571,19 +567,19 @@ body {
 
 #descripcion-gastro {
 	width: 100%;
-	background: url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/descripcion-gastro-small.jpg) no-repeat top left;
+	background: url(/maderos17/sites/all/themes/bootstrap_business/images/descripcion-gastro-small.jpg) no-repeat top left;
 	background-size:cover;
 	height:673px;
 	position:relative;
 	@include respond-to('small') {
-	background: url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/descripcion-gastro-small.jpg) no-repeat top left;
+	background: url(/maderos17/sites/all/themes/bootstrap_business/images/descripcion-gastro-small.jpg) no-repeat top left;
 	background-size:cover;
 	}
 	@include respond-to('medium') {
-	background: url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/descripcion-gastro.jpg) no-repeat top left;	
+	background: url(/maderos17/sites/all/themes/bootstrap_business/images/descripcion-gastro.jpg) no-repeat top left;	
 	}
 	@include respond-to('large') {
-	background: url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/descripcion-gastro.jpg) no-repeat top left;	
+	background: url(/maderos17/sites/all/themes/bootstrap_business/images/descripcion-gastro.jpg) no-repeat top left;	
 	}
 	.txt_descripcion {
 		background: rgba(255,255,255,0.7);
@@ -649,7 +645,7 @@ body {
 #mision {
 	width:300px;
 	height:293px;
-	background:url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/mision.jpg) no-repeat center center;
+	background:url(/maderos17/sites/all/themes/bootstrap_business/images/mision.jpg) no-repeat center center;
 	background-size:cover;
 	padding:20px;
 	margin:40px auto;
@@ -728,7 +724,7 @@ body {
 	width:300px;
 	height:293px;
 	float:none;
-	background:url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/vision.jpg) no-repeat center center;
+	background:url(/maderos17/sites/all/themes/bootstrap_business/images/vision.jpg) no-repeat center center;
 	background-size:cover;
 	padding:20px;
 	margin:20px auto;
@@ -857,10 +853,7 @@ select#edit-submitted-hora-minute {
 		background-color: #a51c26;
 	}
 	#main-content {
-		background: url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/postres.jpg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
+		background: url(/maderos17/sites/default/files/fotos-menu/postres.jpg) no-repeat center center fixed;
 		background-size: cover;
 	}
 	#block-block-9 {
@@ -898,56 +891,28 @@ select#edit-submitted-hora-minute {
 			text-align: center;
 			max-width:990px;
 			li {
-				/*float: left;*/
 				list-style: none;
+				cursor: pointer;
 				display: inline;
-				margin: 0 10px 0 10px;
-				padding: 0 0 0 0;
+				padding: 8px 12px;
 				font-size: 14px;
 				font-weight: lighter;
 				color: #333;
 				text-transform:uppercase;
 				border-bottom: 5px solid transparent;
 				&:hover {
-						border-bottom: 5px solid #a41c26;
-					}
+					border-bottom: 5px solid #a41c26;
+				}
 			}
-
+			li.active{
+				background: $rojo;
+				color: $blanco;
+			}
 		}
 	}
 }
 
-.view-menu {
-	max-width: 990px;
-	margin: 0 auto;
-	.view-content {
 
-		.views-field-title {
-			font-weight: bold;
-			font-size: 18px;
-			a {
-				color:#333;
-			}
-
-		}
-
-		.views-field-field-precio {
-			margin: 0 0 5px 0;
-		}
-
-		.views-field-field-categoria {
-			display: none;
-		}
-
-		.views-field-field-descripcion {
-			margin: 0 0 30px 0;
-		}
-
-	}
-
-}
-
-/* ========= menu ends ========= */
 
 /* ========= contacto starts ========= */
 
@@ -1022,282 +987,11 @@ select#edit-submitted-hora-minute {
 	#home_deco {
 		width: 100%;
 		height: 50vh;
-		background:  url(http://www.gn-digital.info/maderos17/sites/all/themes/bootstrap_business/images/home-deco.jpg) no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
+		background:  url(/maderos17/sites/all/themes/bootstrap_business/images/home-deco.jpg) no-repeat center center fixed;
+			@include background(cover);
 	}
 }
 
-/* menu del día */
-
-#block-views-menu-del-dia-block {
-	h2 {
-		font-weight: lighter;
-		text-transform: uppercase;
-		font-size: 36px;
-		text-align: center;
-		margin: 30px 0 10px 0;
-		padding: 0 0 0 0;
-	}
-	.view-menu-del-dia {
-		.view-content {
-			.views-row {
-				display: flex;
-				flex-direction: column;
-				justify-content: space-evenly;
-				@include respond-to('small') {
-					flex-direction: column;
-				}
-				@include respond-to('medium') {
-					flex-direction: row;
-				}
-				@include respond-to('large') {
-					flex-direction: row;
-				}
-				@include respond-to('fourk') {
-					flex-direction: row;
-				}
-				.views-field-title {
-					display: none;
-				}
-				.views-fieldset {
-					width: 300px;
-					position: relative;
-					margin:0 auto;
-				}
-			}
-		}
-	}
-}
-
-/* platillos del día */
-
-.views_entradas {
-		.views-field-field-entrada-del-dia-nombre {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			text-align: center;
-			.field-content{
-				display: flex;
-				height: 85%;
-				background-color:rgba(255,120,0,0.3);
-				justify-content:center;
-				align-items: center;
-				margin:20px;
-				color: #fff;
-				background-clip: content-box;
-				border: 1px solid #fff;
-				padding: 10px;
-				font-size: 1.3em;
-			}
-		}
-		.views-field-field-entrada-del-dia {
-
-		}
-	
-}
-
-.views_platofuerte {
-		.views-field-field-plato-fuerte-dl-dia-nombre {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			text-align: center;
-			.field-content{
-				display: flex;
-				height: 85%;
-				background-color:rgba(255,120,0,0.3);
-				justify-content:center;
-				align-items: center;
-				margin:20px;
-				color: #fff;
-				background-clip: content-box;
-				border: 1px solid #fff;
-				padding: 10px;
-				font-size: 1.3em;
-			}
-		}
-		.views-field-field-plato-fuerte-del-dia {
-
-		}
-	
-}
-
-.views_postre {
-		.views-field-field-postre-del-dia-nombre {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			text-align: center;
-			.field-content{
-				display: flex;
-				height: 85%;
-				background-color:rgba(255,120,0,0.3);
-				/*background-blend-mode: lighten;*/
-				justify-content:center;
-				align-items: center;
-				margin:20px;
-				color: #fff;
-				background-clip: content-box;
-				border: 1px solid #fff;
-				padding: 10px;
-				font-size: 1.3em;
-			}
-		}
-		.views-field-field-postre-del-dia {
-
-		}
-	
-}
-
-/* slide show promos */
-
-#block-views-promos-por-temporada-block {
-	margin: 80px 0 40px 0;
-	h2 { display: none; }
-
-	.view-promos-por-temporada {
-		
-
-		#views_slideshow_cycle_main_promos_por_temporada-block_1 {
-			width: 100% !important;
-			float: left;
-			/*border: 1px solid green;*/
-			#views_slideshow_cycle_teaser_section_promos_por_temporada-block_1 {
-				/*min-height: 430px;*/
-				width: 100% !important;
-				height: auto;
-				background-color: #f2ebe3;
-				.views_slideshow_cycle_div_promos_por_temporada-block_1_0 {
-					width: 100%;
-					height: auto;
-					
-				}
-				.views_slideshow_cycle_div_promos_por_temporada-block_1_1 {
-					width: 100%;
-				}
-				.views_slideshow_cycle_div_promos_por_temporada-block_1_2 {
-					width: 100%;
-				}
-
-				.views-slideshow-cycle-main-frame-row {
-					/*min-height: 395px;*/
-					width: 100% !important;
-					/*height: auto;*/
-					.views-slideshow-cycle-main-frame-row-item {
-						display: block;
-						justify-content: space-evenly;
-						@include respond-to('small') {
-							display: block;
-						}
-						@include respond-to('medium') {
-							display: flex;
-						}
-						@include respond-to('large') {
-							display: flex;
-						}
-						@include respond-to('fourk') {
-							display: flex;
-						}
-						/*.field-content {
-							max-width: 100%;
-							width: 100%;
-						}*/
-						.views-field-field-promo-foto {
-
-							/*max-width: 45vw;*/
-							/*max-height: 50vh;*/
-							/*width: 785px;*/
-							img {
-								margin: 0;
-								padding: 0;	
-							}
-						}
-						.views_promo_texto {
-							text-transform: uppercase;
-							width: 70%; /*calc(100% - 100px);*/
-							padding: 4% 2%;
-							@include respond-to('small') {
-								padding: 4% 2%;
-							}
-							@include respond-to('medium') {
-								padding: 4% 2%;
-							}
-							@include respond-to('large') {
-								padding: 1% 2%;
-							}
-							@include respond-to('fourk') {
-								padding: 4% 2%;
-							}
-							.views-field-field-promo-titular {
-								color: #a51c26;
-								font-size: 3em;
-								font-weight: bold;
-								line-height: 1em;
-								padding: 30px 0 0 20px;
-								@include respond-to('small') {
-									font-size: 2em;
-								}
-								@include respond-to('medium') {
-									font-size: 2em;
-								}
-								@include respond-to('large') {
-									font-size: 3em;
-								}
-								@include respond-to('fourk') {
-									font-size: 3em;
-								}
-							}
-							.views-field-field-promo-descripcion {
-								color: #a51c26;
-								font-size: 4em;
-								font-weight: bolder;
-								line-height: 1em;
-								padding: 20px 0 0 20px;
-									@include respond-to('small') {
-										font-size: 4em;
-									}
-									@include respond-to('medium') {
-										font-size: 2.5em;
-									}
-									@include respond-to('large') {
-										font-size: 4em;
-									}
-									@include respond-to('fourk') {
-										font-size: 4em;
-									}
-							}
-							.views-field-field-promo-dias {
-								color: #fb6202;
-								font-size: 1.2em;
-								line-height: 1em;
-								padding: 50px 0 30px 20px;
-								@include respond-to('small') {
-									padding: 50px 0 30px 20px;
-								}
-								@include respond-to('medium') {
-									padding: 50px 0 40px 20px;
-								}
-								@include respond-to('large') {
-									padding: 120px 0 0 20px;
-								}
-								@include respond-to('fourk') {
-									padding: 120px 0 0 20px;
-								}
-							}
-						}
-					}
-
-				}
-
-			}
-		}
-	}
-
-}
 
 
 /* webfomr reservaciones en home */
@@ -1316,7 +1010,74 @@ select#edit-submitted-hora-minute {
 }
 
 
+// vista promos por temporada
+#block-views-6ca4419918dd1afda5dcd2559d1a0386{
+	margin-top: 80px;
+	h2{
+		display: none;
+	}
+}
+.view-promos-por-temporada-owlcarousel{
+	.view-content{
+		max-width: 1100px;
+		margin: 0 auto;
+		width: 100%;
+		.item{
+			max-width: 80%;
+			margin: 0 auto;
+		}
+	}
+}
+
+
+.owl-nav{
+	margin-top: 10px;
+	text-align: center;
+	display:none;
+	.owl-prev[class*=owl-], .owl-next[class*=owl-]{
+		    color: #FFF;
+		    font-size: 14px;
+		    margin: 5px;
+		    padding: 4px 7px;
+		    background: #D6D6D6;
+		    display: inline-block;
+		    cursor: pointer;
+		    border-radius: 3px;
+	}
+}
+.owl-dots{
+	text-align: center;
+	.owl-dot, .active{
+		    cursor: pointer;
+		    display: inline-block;
+		    span{
+		    	    width: 10px;
+				    height: 10px;
+				    margin: 5px 7px;
+				    background: #D6D6D6;
+				    display: block;
+				    -webkit-backface-visibility: visible;
+				    transition: opacity .2s ease;
+				    border-radius: 30px;
+				    &:hover{
+				    	background: #869791;
+				    }
+		    }
+	}
+}
+
+
+
 /* ========= home ends ========= */
+
+/* ========= footer ========= */
+
+
+#block-block-15{
+	.content{
+		color: $blanco;
+	}
+}
 
 #block-block-1 {
 	/*display:none;*/
@@ -1330,4 +1091,15 @@ select#edit-submitted-hora-minute {
 		display: none;
 	}
 }
+
+// user login
+
+#user-login{
+	width: 95%;
+	margin: 0 auto;
+	padding: 12px;
+	max-width: 500px;
+}
+
+
 
