@@ -2,23 +2,29 @@
 @import 'mixin.scss';
 
 @media only screen and (min-width: 1440px) {
-	
+
 }
 @media only screen and (max-width: 1440px) { // Laptop L
-	
+
 }
 @media only screen and (max-width: 1024px) { // Laptop
-	
+
 }
 @media only screen and (max-width: 992px) {
-	
+	// cambio de menus movil y desktop
+	#block-block-5{
+		display: none;
+	}
+	#block-block-10{
+		display: block!important;
+	}
 }
 @media only screen and (max-width: 768px) {
-	
+
 	.view-menu {
 		.view-content {
 			.itemComidas{
-				
+
 			}
 		}
 	}
@@ -38,12 +44,35 @@
 			    }
 			}
 		}
-	}	
+	}
+
+	#block-webform-client-block-1 {
+		.webform-component{
+			width: 100%;
+			display: inline-block;
+		}
+		.webform-component--fecha-de-reservacion,
+		.webform-component--hora{
+			width: 100%!important;
+		}
+	}
+
 }
 
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 @media only screen and (max-width: 480px){
 
+	.wrapDescriptionfront .descripcion-gastro{
+		margin-left: inherit!important;
+	}
+
+	.fleximage{
+		display:none!important;
+	}
 }
 @media only screen and (max-width: 320px){
 

@@ -1,0 +1,855 @@
+/*sass --watch maderos-style.scss:maderos-style.css --style compressed*/
+@import 'compass/css3';
+@import 'mixin.scss';
+@import 'responsive.scss';
+@import 'vistas.scss';
+
+
+/* ============ theme styling resets ends ============ */
+
+body {
+
+}
+
+#block-search-form {
+	display: none;
+}
+
+.page-title {
+	display: none;
+}
+
+.page-node-1 {
+	#breadcrumb {
+		display: none;
+	}
+}
+
+#header {
+	/*height:99vh;*/
+	display:none;
+}
+
+.block-webform{
+	h2{
+		text-align: center;
+	}
+}
+
+h1, h2, h3, h4, h5{
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+#toTop {
+    position: fixed;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #999999;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    width: 55px;
+    height: 55px;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+    color: $blanco;
+    font-size: 32px;
+    text-align: center;
+    display: none;
+    padding: 10px 0 0 2px;
+    z-index: 14;
+}
+
+.glyphicon {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: 'Glyphicons Halflings';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* ========= header starts ========= */
+
+#block-block-13 {
+	position: absolute;
+		top: 190px;
+		left: 5%;
+	#slogan {
+		padding:0 15px 0 15px;
+		h1 {
+			font-family: 'Oswald', sans-serif;
+			font-weight: lighter;
+			font-size: 4em !important;
+			margin:0;
+			padding:0;
+			color:#fff;
+			span {
+				font-weight:bolder;
+			}
+		}
+		#goDown-icon {
+
+		}
+	}
+}
+
+#block-block-14 {
+	position: absolute;
+		top: 190px;
+		left: 5%;
+	#slogan {
+		padding:0 15px 0 15px;
+		h1 {
+			font-family: 'Oswald', sans-serif;
+			font-weight: lighter;
+			font-size: 4em !important;
+			margin:0;
+			padding:0;
+			color:#fff;
+			span {
+				font-weight:bolder;
+			}
+		}
+		#goDown-icon {
+
+		}
+	}
+}
+
+#main-navigation{
+	display: none;
+}
+#banner{
+	background: $rojo;
+}
+
+/* ========= MENU TOP ========= */
+
+#block-block-5{
+	background: $rojo;
+	nav{
+		ul{
+			@include flexo3;
+			li{
+				list-style: none;
+				a{
+					padding: 8px 12px;
+					border: solid 2px $rojo;
+					color: $blanco;
+					text-transform: uppercase;
+					@include transicion(300ms);
+					&:hover{
+						text-decoration: none;
+						border: solid 2px $blanco;
+						background: $blanco;
+						color: $rojo;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+/* ========= footer starts ========= */
+
+#subfooter {
+	display:none;
+}
+
+#footer {
+	background: $rojo;
+	padding: 30px 0;
+	.items-footer{
+		a, h4{
+			color: $blanco;
+		}
+	}
+}
+
+/* ========= galería de fotos ========= */
+
+.gal{
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	-ms-column-count: 3;
+	-o-column-count: 3;
+	column-count: 3;
+	-webkit-column-gap: 4px;
+	-moz-column-gap: 4px;
+	-ms-column-gap: 4px;
+	-o-column-gap: 4px;
+	column-gap: 4px;
+  	margin: 0 auto;
+	.imgGal{
+		img{
+			width: 100%;
+			margin: 2px 0;
+		}
+	}
+}
+
+/* ========= footer ends ========= */
+
+/* ========= Menu Principal - side menu starts ========= */
+
+.front,
+.page-node-106,
+.page-node-111 {
+	#slider {
+		position:relative;
+		height:99vh;
+	}
+}
+
+#slider-inside{
+
+}
+
+#maderos-social {
+	position:absolute;
+	top:0;
+	left:-75px;
+	display: flex;
+	flex-direction: column;
+
+	.waze {
+		margin: 0 10px 0 0;
+		border:none;
+		padding: 10px 0 0 0;
+		display:none;
+		img {
+			border-bottom: 1px solid #a41c28;
+			border-right: 1px solid #a41c28;
+			background-color: #a41c28;
+		}
+	}
+	.facebook {
+		margin: 0 10px 0 0;
+		border:none;
+		padding: 10px 0 0 0;
+		display:none;
+		img {
+			border-bottom: 1px solid #a41c28;
+			border-right: 1px solid #a41c28;
+			background-color: #a41c28;
+		}
+	}
+	.maderos_menu_toggle {
+		border:block;
+		padding: 20px 0 0 0;
+		img {
+			border-bottom: 1px solid #a41c28;
+			border-right: 1px solid #a41c28;
+			background-color: #a41c28;
+		}
+	}
+	.maderos_menu_close {
+		border:none;
+		padding: 15px 0 0 0;
+		margin-left: 75px;
+
+		img {
+			border-bottom: 1px solid #a41c28;
+			border-right: 1px solid #a41c28;
+			background-color: #a41c28;
+		}
+	}
+}
+
+.sidenav {
+    height: 100vh;
+    width: 335px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -335px;
+    background-color: #a41c28;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1000;
+    .maderos_menu_close,
+    .maderos_menu_toggle{
+		cursor: pointer;
+    }
+}
+
+.sidenav a {
+    padding: 18px 8px 18px 32px;
+    font-weight:lighter;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: left;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid #fff;
+}
+
+.sidenav a:nth-of-type(1) {
+	border-top: 1px solid #fff;
+}
+
+/*.sidenav a:nth-of-type(2) {
+	border-top: 1px solid #fff;
+}*/
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/*.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}*/
+
+.sidenav ul li {
+	list-style-type: none !important;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+
+/* ========= side menu ends ========= */
+
+/* ========= Eventos - sub nav starts ========= */
+
+#subnav {
+	background-color: #f4f3f1;
+	ul {
+		list-style-type:none;
+		overflow: hidden;
+		padding:35px 0;
+		max-width:990px;
+		margin:0 auto;
+		@include flexo3;
+		@include flex-wrap(wrap);
+		@include transition(300ms);
+		li {
+			max-width: 195px;
+			text-align:center;
+			list-style:none;
+			cursor: pointer;
+			margin:0 30px;
+			padding:10px 20px !important;
+			font-size: 24px;
+			font-weight: lighter;
+			color: #333;
+			text-transform: uppercase;
+			text-decoration:none;
+			display:block;
+			border-bottom: 5px solid #f4f3f1;
+			&:hover {
+				border-bottom: 5px solid $rojo;
+			}
+		}
+	}
+}
+
+/* ========= Eventos sub nav ends ========= */
+
+/* ========= descripcion de eventos starts ========= */
+
+.fleximage{
+	img{
+		@include wyh;
+	}
+}
+
+.wrapDescriptionfront{
+	@include flexo3;
+	@include align-items(stretch);
+	.descripcion-gastro {
+		@include flexo3;
+		margin-left: -25%;
+		.txt_descripcion {
+			background: rgba($blanco, 0.7);
+			width:100%;
+			max-width: 500px;
+			padding:20px;
+			h3 {
+				color: #a41c28;
+				padding: 10px 10px;
+			}
+			p {
+				color: #5a4621;
+				padding: 0 10px;
+
+			}
+		}
+	}
+}
+
+
+.descripcion-eventos {
+	max-width: 880px;
+	margin: 0 auto 40px auto;
+	p {
+		text-align: center;
+		color: #5a4621;
+	}
+}
+
+/* ========= descripcion de eventos ends ========= */
+
+/* ========= mision vision starts ========= */
+
+#mision {
+	width:300px;
+	height:293px;
+	background:url(/sites/all/themes/bootstrap_business/images/mision.jpg) no-repeat center center;
+	background-size:cover;
+	padding:20px;
+	margin:40px auto;
+	float:none;
+	.descripcion-mv {
+		width:100%;
+		height:100%;
+		text-align:center;
+		border: solid 1px #fff;
+		padding: 20px;
+		background-clip: content-box;
+		background-color:rgba(255,255,255,0.7);
+		h4 {
+			font-size:26px;
+			font-weight:lighter;
+			text-transform: uppercase;
+			color:#3b1b06;
+			margin:0;
+			padding:20px 0 20px 0;
+		}
+		p {
+			font-size:16px;
+			padding: 20px;
+			line-height: 18px;
+			font-weight:lighter;
+		}
+	}
+}
+
+#vision {
+	width:300px;
+	height:293px;
+	float:none;
+	background:url(/sites/all/themes/bootstrap_business/images/vision.jpg) no-repeat center center;
+	background-size:cover;
+	padding:20px;
+	margin:20px auto;
+	.descripcion-mv {
+		width:100%;
+		height:100%;
+		text-align:center;
+		border: solid 1px #fff;
+		padding: 20px;
+		background-clip: content-box;
+		background-color:rgba(255,120,0,0.7);
+		h4 {
+			font-size:26px;
+			font-weight:lighter;
+			text-transform: uppercase;
+			color:#fff;
+			margin:0;
+			padding:20px 0 20px 0;
+		}
+		p {
+			font-size:16px;
+			font-weight:lighter;
+			color:#fff;
+			padding: 20px;
+			line-height: 18px;
+		}
+	}
+}
+
+/* ========= mision vision ends ========= */
+
+
+/* ========= webforms starts ========= */
+
+.webform-client-form {
+	max-width: 585px;
+	margin: 0 auto;
+	padding: 0 10px;
+	.webform-submit {
+		margin: 5px 5px 10px 0;
+    background-color: $rojo;
+    border: none;
+    box-shadow: none;
+    padding: 15px 24px;
+    text-transform: uppercase;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: $blanco;
+		&:hover{
+			background: lighten($rojo, 20%);
+		}
+	}
+}
+
+
+.form-actions {
+	.form-submit {
+		width: 100%;
+	}
+}
+
+label {
+	display: none;
+}
+
+select#edit-submitted-dia-month {
+    width: 40%;
+}
+
+select#edit-submitted-dia-day {
+    width: 40%;
+    margin-left: 8px;
+}
+
+select#edit-submitted-hora-hour {
+    width: 40%;
+}
+
+select#edit-submitted-hora-minute {
+    width: 40%;
+}
+
+/* ========= menu movil ========= */
+#block-block-10{
+	display: none;
+	background: $rojo;
+	figure{
+	    text-align: center;
+		img{
+			width: 150px;
+		}
+	}
+	nav.navMenuTogle{
+		display: none;
+		ul{
+			padding: 0;
+			li{
+				list-style: none;
+				text-align: center;
+				border-bottom: 1px solid $blanco;
+				padding: 8px 0;
+				a{
+						font-size: 1.2em;
+						text-transform: uppercase;
+						padding: 8px 0;
+						color: $blanco;
+				}
+			}
+		}
+	}
+	.mtogler{
+		text-align: center;
+		font-size: 2em;
+		padding: 14px;
+		color: $blanco;
+		cursor: pointer;
+	}
+}
+
+/* ========= webforms ends ========= */
+
+/* ========= menu starts ========= */
+
+.page-menu {
+	#slider {
+		position:relative;
+		height:200px;
+		background-color: #a51c26;
+	}
+	#main-content {
+		background: url('/maderos-rest-2019/sites/default/files/fotos-menu/postres.jpg') no-repeat center center fixed;
+		background-size: cover;
+	}
+	#block-block-9 {
+		background-color: rgba($blanco, 0.85);
+		max-width: 990px;
+		margin: 0 auto;
+	}
+	#block-system-main {
+		background-color: rgba($blanco, 0.85);
+		max-width: 990px;
+		margin: 0 auto;
+		padding: 0 30px 60px 30px !important;
+	}
+}
+
+
+#block-block-9 {
+	h2 {
+		display: none;
+	}
+	#platillos-titular {
+		font-weight: lighter;
+		text-transform: uppercase;
+		font-size: 36px;
+		text-align: center;
+		margin: 30px 0 0 0;
+		padding: 0 0 0 0;
+	}
+	#platillos-nav {
+		ul {
+			list-style-type: none;
+			overflow: hidden;
+			margin: 0 auto 0 auto;
+			padding: 45px 0 45px 0;
+			text-align: center;
+			max-width:990px;
+			li {
+				list-style: none;
+				cursor: pointer;
+				display: inline;
+				padding: 8px;
+				font-size: 14px;
+				color: $rojo;
+				font-weight: 700;
+				text-transform:uppercase;
+				border-bottom: 5px solid transparent;
+				&:hover {
+					border-bottom: 5px solid $rojo;
+				}
+			}
+			li.active{
+				background: $rojo;
+				color: $blanco;
+			}
+		}
+	}
+}
+
+// Owl carrusel
+#block-block-11{
+	margin: 30px 0;
+	.owl-carousel.owl-drag .owl-item{
+		overflow: hidden;
+		height: 220px;
+	}
+	.owl-dots{
+		margin-top: 20px;
+		button{
+			background: $blanco;
+			border:none;
+		}
+	}
+}
+
+// redes sociales en Top
+#block-block-12{
+	position: absolute;
+	z-index: 2;
+	right: 0;
+}
+
+
+/* ========= contacto starts ========= */
+
+.page-node-108 {
+	#slider {
+		position:relative;
+		height:200px;
+		background-color: #a51c26;
+	}
+	#block-system-main {
+		display: none;
+	}
+	h2 {
+		font-weight: lighter;
+		text-transform: uppercase;
+		font-size: 36px;
+		text-align: center;
+		margin: 30px 0 0 0;
+		padding: 0 0 0 0;
+	}
+}
+
+/* ========= contacto ends ========= */
+
+
+/* ========= eventos cotizacion starts ========= */
+
+.page-node-111 {
+	h2 {
+		font-weight: lighter;
+		text-transform: uppercase;
+		font-size: 36px;
+		text-align: center;
+		margin: 30px 0 30px 0;
+		padding: 0 0 0 0;
+	}
+	.gal {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+		max-width: 990px;
+		margin: 0 auto;
+	}
+
+	.gal img{
+		width: 100%;
+		padding: 7px 0;
+	}
+
+	@media (max-width: 400px) {
+		.gal {
+			-webkit-column-count: 1;
+			-moz-column-count: 1;
+			column-count: 1;
+		}
+	}
+}
+
+
+/* ========= eventos cotizacion ends ========= */
+
+
+/* ========= home starts ========= */
+
+/* home deco - imagen decorativa */
+
+#block-block-1{
+	padding: 30px 0;
+}
+
+.home_deco {
+	width: 100%;
+	height: 50vh;
+	background:  url(/maderos-rest-2019/sites/default/files/images/home-deco.jpg) no-repeat center center fixed;
+		@include background(cover);
+}
+
+/* webfomr reservaciones en home */
+
+#block-webform-client-block-1 {
+	h2 {
+		font-weight: lighter;
+		text-transform: uppercase;
+		font-size: 36px;
+		text-align: center;
+		margin: 30px 0 0 0;
+		padding: 0 0 0 0;
+	}
+	.webform-component{
+		width: 100%;
+		display: inline-block;
+	}
+	.webform-component--fecha-de-reservacion, .webform-component--hora{
+		width: 48%;
+	}
+	.webform-component--fecha-de-reservacion{
+		z-index: 2;
+		vertical-align: top;
+	}
+	.webform-component--hora-marcada{
+		display: none;
+	}
+	.webform-component-radios{
+		.form-type-radio{
+			display: inline-block;
+			margin-right: 12px;
+			input{
+				margin-top: -5px;
+			}
+		}
+	}
+	.form-item, .form-actions {
+	    margin-top: 1em;
+	    margin-bottom: 0!important;
+	}
+	.clockpicker-button{
+		 font-size: 1.4em!important;
+	}
+}
+
+#ui-datepicker-div{
+	z-index: 2!important;
+}
+
+// vista promos por temporada
+#block-views-6ca4419918dd1afda5dcd2559d1a0386{
+	margin-top: 80px;
+	h2{
+		display: none;
+	}
+}
+.view-promos-por-temporada-owlcarousel{
+	.view-content{
+		max-width: 1100px;
+		margin: 0 auto;
+		width: 100%;
+		.item{
+			max-width: 80%;
+			margin: 0 auto;
+		}
+	}
+}
+
+
+.owl-nav{
+	margin-top: 10px;
+	text-align: center;
+	display:none;
+	.owl-prev[class*=owl-], .owl-next[class*=owl-]{
+		    color: #FFF;
+		    font-size: 14px;
+		    margin: 5px;
+		    padding: 4px 7px;
+		    background: #D6D6D6;
+		    display: inline-block;
+		    cursor: pointer;
+		    border-radius: 3px;
+	}
+}
+.owl-dots{
+	text-align: center;
+	.owl-dot, .active{
+		    cursor: pointer;
+		    display: inline-block;
+		    span{
+		    	    width: 10px;
+				    height: 10px;
+				    margin: 5px 7px;
+				    background: #D6D6D6;
+				    display: block;
+				    -webkit-backface-visibility: visible;
+				    transition: opacity .2s ease;
+				    border-radius: 30px;
+				    &:hover{
+				    	background: #869791;
+				    }
+		    }
+	}
+}
+
+/* ========= home ends ========= */
+
+/* ========= footer ========= */
+
+
+// user login
+
+#user-login{
+	width: 95%;
+	margin: 0 auto;
+	padding: 12px;
+	max-width: 500px;
+}

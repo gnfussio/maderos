@@ -26,7 +26,7 @@
 		}
 
 		.views-field-field-descripcion {
-			
+
 		}
 	}
 }
@@ -52,18 +52,6 @@
 				display: flex;
 				flex-direction: column;
 				justify-content: space-evenly;
-				@include respond-to('small') {
-					flex-direction: column;
-				}
-				@include respond-to('medium') {
-					flex-direction: row;
-				}
-				@include respond-to('large') {
-					flex-direction: row;
-				}
-				@include respond-to('fourk') {
-					flex-direction: row;
-				}
 				.views-field-title {
 					display: none;
 				}
@@ -103,7 +91,7 @@
 		.views-field-field-entrada-del-dia {
 
 		}
-	
+
 }
 
 .views_platofuerte {
@@ -129,7 +117,7 @@
 		.views-field-field-plato-fuerte-del-dia {
 
 		}
-	
+
 }
 
 .views_postre {
@@ -156,7 +144,7 @@
 		.views-field-field-postre-del-dia {
 
 		}
-	
+
 }
 
 
@@ -167,21 +155,21 @@
 	h2 { display: none; }
 
 	.view-promos-por-temporada {
-		
+
 
 		#views_slideshow_cycle_main_promos_por_temporada-block_1 {
 			width: 100% !important;
 			float: left;
-		
+
 			#views_slideshow_cycle_teaser_section_promos_por_temporada-block_1 {
-			
+
 				width: 100% !important;
 				height: auto;
 				background-color: #f2ebe3;
 				.views_slideshow_cycle_div_promos_por_temporada-block_1_0 {
 					width: 100%;
 					height: auto;
-					
+
 				}
 				.views_slideshow_cycle_div_promos_por_temporada-block_1_1 {
 					width: 100%;
@@ -191,9 +179,9 @@
 				}
 
 				.views-slideshow-cycle-main-frame-row {
-				
+
 					width: 100% !important;
-				
+
 					.views-slideshow-cycle-main-frame-row-item {
 						display: block;
 						justify-content: space-evenly;
@@ -215,7 +203,7 @@
 
 							img {
 								margin: 0;
-								padding: 0;	
+								padding: 0;
 							}
 						}
 						.views_promo_texto {
@@ -299,4 +287,3 @@
 }
 
 */
-
